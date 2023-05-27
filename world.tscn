@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://hcynnsjpo8rr"]
+[gd_scene load_steps=2 format=3 uid="uid://bgpew8vqwl1ae"]
+
+[ext_resource type="PackedScene" uid="uid://c4uufil12w6ip" path="res://control.tscn" id="1_wak3k"]
 
 [node name="World" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("1_wak3k")]
