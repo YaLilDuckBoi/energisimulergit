@@ -4,8 +4,8 @@ const effektivSolMW : float = 160.6584
 const effektivHavMW : float = 822.4086
 const effektivLandMW : float = 1013.1
 
-const maxBarTWh = 10.0
-const maxBarPrise = 150.0
+const maxBarTWh = 12.5
+const maxBarPrise = 125.0
 
 
 var EkstraSolMW : float = 0

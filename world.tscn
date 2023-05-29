@@ -22,6 +22,10 @@ grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
+
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer"]
 layout_mode = 2
 
@@ -32,12 +36,22 @@ layout_mode = 2
 layout_mode = 2
 text = "Simuler"
 
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+text = "Balance [GW]: Forbrug - Fornybare:"
+
+[node name="Label7" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+size_flags_vertical = 6
+text = "Salgsværdi  [Euro/MWh]:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
-layout_mode = 2
 
 [node name="SolBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -54,6 +68,10 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
 
 [node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
@@ -187,8 +205,43 @@ value = 79.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
+[node name="HBoxAxisLbls" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars"]
 layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 2
+text = "-5"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "5
+"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+text = "^"
+horizontal_alignment = 2
 
 [node name="HavBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -205,6 +258,10 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
 
 [node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
@@ -338,8 +395,43 @@ value = 79.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
+[node name="HBoxAxisLbls" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars"]
 layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 2
+text = "-5"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "5
+"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+text = "^"
+horizontal_alignment = 2
 
 [node name="LandBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -356,6 +448,10 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
 
 [node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
@@ -488,8 +584,43 @@ step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
+[node name="HBoxAxisLbls" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars"]
 layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 2
+text = "-5"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "5
+"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+text = "^"
+horizontal_alignment = 2
 
 [node name="AtomBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -506,6 +637,10 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
 
 [node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
@@ -638,8 +773,43 @@ step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
+[node name="HBoxAxisLbls" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars"]
 layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 2
+text = "-5"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "5
+"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+text = "^"
+horizontal_alignment = 2
 
 [node name="FornybareBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -656,6 +826,10 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
 
 [node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
@@ -783,13 +957,49 @@ custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
+tooltip_text = "34535"
 max_value = 120.0
 step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
+[node name="HBoxAxisLbls" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars"]
 layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 2
+text = "-5"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "5
+"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+text = "^"
+horizontal_alignment = 2
 
 [node name="ForbrugBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -806,6 +1016,10 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
 
 [node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
@@ -938,7 +1152,46 @@ step = 0.0
 fill_mode = 3
 show_percentage = false
 
+[node name="HBoxAxisLbls" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 2
+text = "-5"
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(4, 0)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxAxisLbls"]
+modulate = Color(0.921569, 0.482353, 0.176471, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+text = "5
+"
+horizontal_alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxAxisLbls"]
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+text = "^"
+horizontal_alignment = 2
+
 [node name="InfoOmBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -950,6 +1203,22 @@ text = "Salgsværdi
  [Euro/MWh]"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HBoxContainer"]
+custom_minimum_size = Vector2(3, 0)
+layout_mode = 2
+
+[node name="Dato" type="Label" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Dato"
 
 [node name="Sol" type="Line2D" parent="."]
 width = 2.0
@@ -995,5 +1264,30 @@ round_precision = 20
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(-576, -324)
+
+[node name="Line1GW" type="Line2D" parent="."]
+points = PackedVector2Array(-1000, -62.5, 10000, -62.5)
+width = 1.0
+default_color = Color(1, 1, 1, 0.0823529)
+
+[node name="Line2GW" type="Line2D" parent="."]
+points = PackedVector2Array(-1000, -125, 10000, -125)
+width = 1.0
+default_color = Color(1, 1, 1, 0.0823529)
+
+[node name="Line3GW" type="Line2D" parent="."]
+points = PackedVector2Array(-1000, -187.5, 10000, -187.5)
+width = 1.0
+default_color = Color(1, 1, 1, 0.0823529)
+
+[node name="Line4GW" type="Line2D" parent="."]
+points = PackedVector2Array(-1000, -250, 10000, -250)
+width = 1.0
+default_color = Color(1, 1, 1, 0.0823529)
+
+[node name="Line5GW" type="Line2D" parent="."]
+points = PackedVector2Array(-1000, -312.5, 10000, -312.5)
+width = 1.0
+default_color = Color(1, 1, 1, 0.0823529)
 
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/VBoxContainer/Simuler" to="." method="_on_simuler_pressed"]

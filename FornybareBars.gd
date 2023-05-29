@@ -47,6 +47,7 @@ func _process(delta):
 		akkumuleretMWh += DataTilAkkumulering
 		akkumuleretSalg += DataTilAkkumulering * World.SimPris[n].y
 		BarSalg.value = akkumuleretSalg / akkumuleretMWh
+		BarSalg.tooltip_text =  "Salgssum: " + String.num(akkumuleretSalg*1e-9,3) + " milliarder Euro\n" + "Produceret: " + String.num(akkumuleretMWh*1e-6,3) + " TWh\n"  + "Gennemsnitssalgsværdi: " + String.num(BarSalg.value,2) + " Euro/MWh\n"
 		DataTilAkkumulering *= 1e-6  # fra MWh Til TWh
 		var Balance : float = (World.SimForbrug[n].y - World.SimFornybar[n].y)
 		if  Balance < -4500.0:

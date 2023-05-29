@@ -1,7 +1,7 @@
 extends Node2D
 
 const skalerMW = -1.0/16.0
-const skalerPris = -2.0
+const skalerPris = -1.0/16.0 * 25
 
 
 var n: int = 0;
@@ -65,11 +65,11 @@ func _process(delta):
 			SimPris.append(Vector2(float(n), tmppris))
 			SkaleretSimPris.append(Vector2(float(n), skalerPris  * tmppris))
 			$Pris.points = SkaleretSimPris
+			$CanvasLayer/Dato.text = Gs.Datoer[n]
 			
 			n += 1
 	$Camera2D.position.x = min(float(Gs.ProdSol.size()),float(n)+300.0)
-
-			
+	
 
 
 
