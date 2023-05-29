@@ -18,7 +18,8 @@ extends VBoxContainer
 
 var akkumuleretMWh : float = 0.0
 var akkumuleretSalg : float = 0.0
-
+var ProduktionsPrisPerMWh : float = 88.0/0.93
+var ProduktionsPrisTotal : float = 0.0
 
 var n : int = 0
 # Called when the node enters the scene tree for the first time.
@@ -47,7 +48,8 @@ func _process(delta):
 		akkumuleretMWh += DataTilAkkumulering
 		akkumuleretSalg += DataTilAkkumulering * World.SimPris[n].y
 		BarSalg.value = akkumuleretSalg / akkumuleretMWh
-		BarSalg.tooltip_text =  "Salgssum: " + String.num(akkumuleretSalg*1e-9,3) + " milliarder Euro\n" + "Produceret: " + String.num(akkumuleretMWh*1e-6,3) + " TWh\n"  + "Gennemsnitssalgsværdi: " + String.num(BarSalg.value,2) + " Euro/MWh\n"
+#		BarSalg.tooltip_text =  "Salgssum: " + String.num(akkumuleretSalg*1e-9,3) + " milliarder Euro\n" + "Produceret: " + String.num(akkumuleretMWh*1e-6,3) + " TWh\n"  + "Gennemsnitssalgsværdi: " + String.num(BarSalg.value,2) + " Euro/MWh\n"
+		BarSalg.tooltip_text =  "Salgssum: " + String.num(akkumuleretSalg*1e-9,3) + " milliarder Euro\n" + "Produceret: " + String.num(akkumuleretMWh*1e-6,3) + " TWh\n"  + "Gennemsnitssalgsværdi: " + String.num(BarSalg.value,2) + " Euro/MWh\n" + "Produktionspris per enhed: " + String.num(ProduktionsPrisPerMWh,2) + " Euro/MWh\n" +  "Produktionspris i alt: " + String.num(ProduktionsPrisPerMWh * akkumuleretMWh * 1e-9,3) + " milliarder Euro\n" 
 		DataTilAkkumulering *= 1e-6  # fra MWh Til TWh
 		var Balance : float = (World.SimForbrug[n].y - World.SimFornybar[n].y)
 		if  Balance < -4500.0:
