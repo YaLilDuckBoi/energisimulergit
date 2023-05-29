@@ -2,50 +2,96 @@
 
 [ext_resource type="Script" path="res://control.gd" id="1_u7yts"]
 
-[node name="Control" type="Control"]
-layout_mode = 3
+[node name="Control" type="GridContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+columns = 3
 script = ExtResource("1_u7yts")
 
-[node name="ItemList" type="ItemList" parent="."]
-layout_mode = 0
-offset_right = 232.0
-offset_bottom = 128.0
-item_count = 4
-item_0/text = "Justeret Solkraft MW:"
-item_1/text = "Justeret Landvindkraft MW:"
-item_2/text = "Justeret Havvindkraft MW:"
-item_3/text = "Justeret Atomkraft MW:"
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+text = "Ekstra MW
+i gennemsnit"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+text = "Skalering:"
+
+[node name="LabelSol" type="Label" parent="."]
+layout_mode = 2
+text = "Solkraft:"
 
 [node name="SolMW" type="LineEdit" parent="."]
-layout_mode = 0
-offset_left = 232.0
-offset_right = 320.0
-offset_bottom = 31.0
+layout_mode = 2
+text = "0"
+caret_blink = true
+caret_blink_interval = 0.5
 
-[node name="LanvindMW" type="LineEdit" parent="."]
-offset_left = 232.0
-offset_top = 32.0
-offset_right = 320.0
-offset_bottom = 63.0
+[node name="SkaleringSol" type="LineEdit" parent="."]
+layout_mode = 2
+text = "1"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="LabelLand" type="Label" parent="."]
+layout_mode = 2
+text = "Landvindkraft:"
+
+[node name="LandvindMW" type="LineEdit" parent="."]
+layout_mode = 2
+text = "0"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="SkaleringLand" type="LineEdit" parent="."]
+layout_mode = 2
+text = "1"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="LabelHav" type="Label" parent="."]
+layout_mode = 2
+text = "Havvindkraft:"
 
 [node name="HavvindMW" type="LineEdit" parent="."]
-offset_left = 232.0
-offset_top = 64.0
-offset_right = 320.0
-offset_bottom = 95.0
+layout_mode = 2
+text = "0"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="SkaleringHav" type="LineEdit" parent="."]
+layout_mode = 2
+text = "1"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="LabelAtom" type="Label" parent="."]
+layout_mode = 2
+text = "Atomkraft:"
 
 [node name="AtomMW" type="LineEdit" parent="."]
-offset_left = 232.0
-offset_top = 96.0
-offset_right = 320.0
-offset_bottom = 127.0
+layout_mode = 2
+text = "0"
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="SkaleringAtom" type="LineEdit" parent="."]
+layout_mode = 2
+text = "%"
+editable = false
+caret_blink = true
+caret_blink_interval = 0.5
 
 [connection signal="text_submitted" from="SolMW" to="." method="_on_sol_mw_text_submitted"]
-[connection signal="text_submitted" from="LanvindMW" to="." method="_on_lanvind_mw_text_submitted"]
+[connection signal="text_submitted" from="SkaleringSol" to="." method="_on_skalering_sol_text_submitted"]
+[connection signal="text_submitted" from="LandvindMW" to="." method="_on_lanvind_mw_text_submitted"]
+[connection signal="text_submitted" from="SkaleringLand" to="." method="_on_skalering_land_text_submitted"]
 [connection signal="text_submitted" from="HavvindMW" to="." method="_on_havvind_mw_text_submitted"]
+[connection signal="text_submitted" from="SkaleringHav" to="." method="_on_skalering_hav_text_submitted"]
 [connection signal="text_submitted" from="AtomMW" to="." method="_on_atom_mw_text_submitted"]

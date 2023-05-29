@@ -1,9 +1,199 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgpew8vqwl1ae"]
+[gd_scene load_steps=3 format=3 uid="uid://bgpew8vqwl1ae"]
 
+[ext_resource type="Script" path="res://world.gd" id="1_fawvh"]
 [ext_resource type="PackedScene" uid="uid://c4uufil12w6ip" path="res://control.tscn" id="1_wak3k"]
 
 [node name="World" type="Node2D"]
+script = ExtResource("1_fawvh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" parent="CanvasLayer" instance=ExtResource("1_wak3k")]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 227.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Control" parent="CanvasLayer/HBoxContainer/VBoxContainer" instance=ExtResource("1_wak3k")]
+layout_mode = 2
+
+[node name="Simuler" type="Button" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Simuler"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2"]
+modulate = Color(0.854902, 0.823529, 0.431373, 1)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Sol"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+max_value = 120.0
+value = 118.0
+fill_mode = 3
+show_percentage = false
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Hav"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+value = 10.0
+fill_mode = 3
+show_percentage = false
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Land"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+value = 10.0
+fill_mode = 3
+show_percentage = false
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5"]
+modulate = Color(0.470588, 1, 1, 1)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Atom"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+value = 10.0
+fill_mode = 3
+show_percentage = false
+
+[node name="VBoxContainer7" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label6" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Fornybare"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+value = 10.0
+fill_mode = 3
+show_percentage = false
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label5" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Forbrug"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+value = 10.0
+fill_mode = 3
+show_percentage = false
+
+[node name="VBoxContainer8" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label7" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer8"]
+modulate = Color(0.780392, 0.780392, 0.780392, 1)
+layout_mode = 2
+size_flags_vertical = 6
+text = "Salgsværdi
+ [Euro/MWh]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sol" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(0.854902, 0.823529, 0.431373, 1)
+
+[node name="Hav" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(0.211765, 0.403922, 1, 1)
+
+[node name="Land" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(0.517647, 1, 0.419608, 1)
+
+[node name="Atom" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(0.470588, 1, 1, 1)
+
+[node name="Forbrug" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(1, 0.439216, 0.45098, 1)
+
+[node name="Fornybare" type="Line2D" parent="."]
+width = 2.0
+default_color = Color(1, 0.505882, 0.92549, 1)
+
+[node name="Pris" type="Line2D" parent="."]
+points = PackedVector2Array(2137, -1576)
+width = 2.0
+default_color = Color(0.780392, 0.780392, 0.780392, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(-576, -324)
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/VBoxContainer/Simuler" to="." method="_on_simuler_pressed"]
