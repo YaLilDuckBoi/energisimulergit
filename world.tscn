@@ -81,6 +81,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -92,6 +93,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -103,6 +105,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -114,6 +117,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -125,6 +129,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -136,6 +141,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -147,6 +153,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -158,6 +165,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -169,6 +177,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -180,6 +189,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -191,6 +201,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 4.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -202,6 +213,7 @@ size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
 value = 79.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -271,6 +283,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -282,6 +295,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -293,6 +307,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -304,6 +319,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -315,6 +331,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -326,6 +343,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -337,6 +355,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -348,6 +367,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -359,6 +379,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -370,6 +391,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -381,6 +403,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -392,6 +415,7 @@ size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
 value = 79.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -461,6 +485,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -472,6 +497,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -483,6 +509,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -494,6 +521,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -505,6 +533,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -516,6 +545,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -527,6 +557,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -538,6 +569,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -549,6 +581,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -560,6 +593,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -571,6 +605,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -581,6 +616,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -650,6 +686,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -661,6 +698,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -672,6 +710,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -683,6 +722,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -694,6 +734,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -705,6 +746,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -716,6 +758,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -727,6 +770,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -738,6 +782,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -749,6 +794,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -760,6 +806,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -770,6 +817,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -839,6 +887,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -850,6 +899,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -861,6 +911,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -872,6 +923,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -883,6 +935,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -894,6 +947,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -905,6 +959,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -916,6 +971,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -927,6 +983,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -938,6 +995,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -949,6 +1007,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -960,6 +1019,7 @@ size_flags_vertical = 3
 tooltip_text = "34535"
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1029,6 +1089,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1040,6 +1101,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1051,6 +1113,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1062,6 +1125,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1073,6 +1137,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1084,6 +1149,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1095,6 +1161,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1106,6 +1173,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1117,6 +1185,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1128,6 +1197,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1139,6 +1209,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 
@@ -1149,6 +1220,7 @@ size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
 step = 0.0
+allow_greater = true
 fill_mode = 3
 show_percentage = false
 

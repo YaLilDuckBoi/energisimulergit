@@ -52,26 +52,37 @@ func _process(delta):
 		var Balance : float = (World.SimForbrug[n].y - World.SimFornybar[n].y)
 		if  Balance < -4500.0:
 			Barm5.value += DataTilAkkumulering
+			Barm5.tooltip_text = String.num(Barm5.value,3) + " TWh"
 		elif Balance < -3500.0:
 			Barm4.value += DataTilAkkumulering
+			Barm4.tooltip_text = String.num(Barm4.value,3) + " TWh"
 		elif Balance < -2500.0:
 			Barm3.value += DataTilAkkumulering
+			Barm3.tooltip_text = String.num(Barm3.value,3) + " TWh"
 		elif Balance < -1500.0:
 			Barm2.value += DataTilAkkumulering
+			Barm2.tooltip_text = String.num(Barm2.value,3) + " TWh"
 		elif Balance < -500.0:
 			Barm1.value += DataTilAkkumulering
+			Barm1.tooltip_text = String.num(Barm1.value,3) + " TWh"
 		elif Balance < 500.0:
 			Bar0.value += DataTilAkkumulering
+			Bar0.tooltip_text = String.num(Bar0.value,3) + " TWh"
 		elif Balance < 1500.0:
 			Barp1.value += DataTilAkkumulering
+			Barp1.tooltip_text = String.num(Barp1.value,3) + " TWh"
 		elif Balance < 2500.0:
 			Barp2.value += DataTilAkkumulering
+			Barp2.tooltip_text = String.num(Barp2.value,3) + " TWh"
 		elif Balance < 3500.0:
 			Barp3.value += DataTilAkkumulering
+			Barp3.tooltip_text = String.num(Barp3.value,3) + " TWh"
 		elif Balance < 4500.0:
 			Barp4.value += DataTilAkkumulering
+			Barp4.tooltip_text = String.num(Barp4.value,3) + " TWh"
 		else:
 			Barp5.value += DataTilAkkumulering
+			Barp5.tooltip_text = String.num(Barp5.value,3) + " TWh"
 			
 		n +=1
 	if n > World.n: #genstart?
