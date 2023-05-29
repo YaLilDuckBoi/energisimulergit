@@ -954,31 +954,44 @@ vertical_alignment = 1
 [node name="Sol" type="Line2D" parent="."]
 width = 2.0
 default_color = Color(0.854902, 0.823529, 0.431373, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Hav" type="Line2D" parent="."]
 width = 2.0
 default_color = Color(0.211765, 0.403922, 1, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Land" type="Line2D" parent="."]
 width = 2.0
 default_color = Color(0.517647, 1, 0.419608, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Atom" type="Line2D" parent="."]
 width = 2.0
 default_color = Color(0.470588, 1, 1, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Forbrug" type="Line2D" parent="."]
 width = 2.0
 default_color = Color(1, 0.439216, 0.45098, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Fornybare" type="Line2D" parent="."]
 width = 2.0
 default_color = Color(1, 0.505882, 0.92549, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Pris" type="Line2D" parent="."]
-points = PackedVector2Array(2137, -1576)
 width = 2.0
 default_color = Color(0.780392, 0.780392, 0.780392, 1)
+end_cap_mode = 2
+round_precision = 20
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(-576, -324)

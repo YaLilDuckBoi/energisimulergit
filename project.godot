@@ -18,7 +18,3 @@ config/icon="res://icon.svg"
 [autoload]
 
 Gs="*res://Gs.gd"
-
-[display]
-
-window/stretch/mode="viewport"
