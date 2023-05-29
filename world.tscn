@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgpew8vqwl1ae"]
+[gd_scene load_steps=9 format=3 uid="uid://bgpew8vqwl1ae"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_fawvh"]
 [ext_resource type="PackedScene" uid="uid://c4uufil12w6ip" path="res://control.tscn" id="1_wak3k"]
+[ext_resource type="Script" path="res://SolBars.gd" id="3_xphj1"]
+[ext_resource type="Script" path="res://HavBars.gd" id="4_m1axl"]
+[ext_resource type="Script" path="res://LandBars.gd" id="5_s1pvm"]
+[ext_resource type="Script" path="res://AtomBars.gd" id="6_mtn7y"]
+[ext_resource type="Script" path="res://FornybareBars.gd" id="7_vbebo"]
+[ext_resource type="Script" path="res://ForbrugBars.gd" id="8_06usl"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_fawvh")
@@ -33,902 +39,910 @@ size_flags_horizontal = 3
 [node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="SolBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("3_xphj1")
 
-[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 layout_mode = 2
 size_flags_vertical = 0
 text = "Sol"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 4.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 5.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 7.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 23.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 34.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 59.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 34.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 34.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 23.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 2.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 modulate = Color(0.854902, 0.823529, 0.431373, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
-max_value = 120.0
-value = 1.0
+max_value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
+step = 0.0
 value = 79.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/SolBars/HBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="HavBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("4_m1axl")
 
-[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3"]
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 layout_mode = 2
 size_flags_vertical = 0
 text = "Hav"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 5.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 7.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 59.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 2.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 modulate = Color(0.211765, 0.403922, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 1.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
+step = 0.0
 value = 79.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/HavBars/HBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer4" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="LandBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("5_s1pvm")
 
-[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4"]
+[node name="Label3" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 layout_mode = 2
 size_flags_vertical = 0
 text = "Land"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 5.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 7.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 59.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 2.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 modulate = Color(0.517647, 1, 0.419608, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 1.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 79.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/LandBars/HBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer5" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="AtomBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("6_mtn7y")
 
-[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5"]
+[node name="Label4" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars"]
 modulate = Color(0.470588, 1, 1, 1)
 layout_mode = 2
 size_flags_vertical = 0
 text = "Atom"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 5.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 7.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 59.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 2.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 modulate = Color(0.470588, 1, 1, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 1.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 79.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/AtomBars/HBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer7" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="FornybareBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("7_vbebo")
 
-[node name="Label6" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7"]
+[node name="Label6" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 layout_mode = 2
 size_flags_vertical = 0
 text = "Fornybare"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 5.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 7.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 59.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 2.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 modulate = Color(1, 0.505882, 0.92549, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 1.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 79.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/FornybareBars/HBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer6" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="ForbrugBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("8_06usl")
 
-[node name="Label5" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6"]
+[node name="Label5" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 layout_mode = 2
 size_flags_vertical = 0
 text = "Forbrug"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 4.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 5.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 7.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 59.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 34.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 23.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 2.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 modulate = Color(1, 0.439216, 0.45098, 1)
 custom_minimum_size = Vector2(6, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 1.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/ForbrugBars/HBoxContainer"]
 custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 max_value = 120.0
-value = 79.0
+step = 0.0
 fill_mode = 3
 show_percentage = false
 
-[node name="VBoxContainer8" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+[node name="InfoOmBars" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label7" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer8"]
+[node name="Label7" type="Label" parent="CanvasLayer/HBoxContainer/HBoxContainer/InfoOmBars"]
 modulate = Color(0.780392, 0.780392, 0.780392, 1)
 layout_mode = 2
 size_flags_vertical = 6

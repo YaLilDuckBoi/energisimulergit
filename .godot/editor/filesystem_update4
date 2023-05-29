@@ -1,7 +1,10 @@
-res://Measurement.gd
-res://control.tscn
 res://world.tscn
-res://Sol2021.tres
-res://control.gd
+res://control.tscn
 res://world.gd
+res://SolBars.gd
+res://HavBars.gd
 res://Gs.gd
+res://LandBars.gd
+res://AtomBars.gd
+res://FornybareBars.gd
+res://ForbrugBars.gd

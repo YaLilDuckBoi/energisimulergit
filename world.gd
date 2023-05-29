@@ -1,6 +1,6 @@
 extends Node2D
 
-const skalerMW = -1.0/10.0
+const skalerMW = -1.0/15.0
 const skalerPris = -2.0
 
 
@@ -20,28 +20,33 @@ var b : float = 58.8055
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-
+	$Sol.scale.y = skalerMW
+	$Hav.scale.y = skalerMW
+	$Land.scale.y = skalerMW
+	$Atom.scale.y = skalerMW
+	$Forbrug.scale.y = skalerMW
+	$Fornybare.scale.y = skalerMW
+	$Pris.scale.y = skalerPris
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	for j in 6:
 		if n < Gs.NDat:
-			SimSol.append(Vector2(float(n),skalerMW * Gs.ProdSol[n]*Gs.FaktorSol))
+			SimSol.append(Vector2(float(n), Gs.ProdSol[n]*Gs.FaktorSol))
 			$Sol.points = SimSol
-			SimHav.append(Vector2(float(n),skalerMW * Gs.ProdHav[n]*Gs.FaktorHav))
+			SimHav.append(Vector2(float(n), Gs.ProdHav[n]*Gs.FaktorHav))
 			$Hav.points = SimHav
-			SimLand.append(Vector2(float(n),skalerMW * Gs.ProdLand[n]*Gs.FaktorLand))
+			SimLand.append(Vector2(float(n), Gs.ProdLand[n]*Gs.FaktorLand))
 			$Land.points = SimLand
-			SimAtom.append(Vector2(float(n),skalerMW * Gs.EkstraAtomMW))
+			SimAtom.append(Vector2(float(n), Gs.EkstraAtomMW))
 			$Atom.points = SimAtom
-			SimForbrug.append(Vector2(float(n),skalerMW * Gs.Forbrug[n]))
+			SimForbrug.append(Vector2(float(n), Gs.Forbrug[n]))
 			$Forbrug.points = SimForbrug
-			SimFornybar.append(Vector2(float(n),skalerMW * (Gs.EkstraAtomMW + Gs.ProdSol[n]*Gs.FaktorSol + Gs.ProdHav[n]*Gs.FaktorHav + Gs.ProdLand[n]*Gs.FaktorLand)))
+			SimFornybar.append(Vector2(float(n), (Gs.EkstraAtomMW + Gs.ProdSol[n]*Gs.FaktorSol + Gs.ProdHav[n]*Gs.FaktorHav + Gs.ProdLand[n]*Gs.FaktorLand)))
 			$Fornybare.points = SimFornybar
 			tmpbalance = Gs.Forbrug[n] - (Gs.EkstraAtomMW + Gs.ProdSol[n]*Gs.FaktorSol + Gs.ProdHav[n]*Gs.FaktorHav + Gs.ProdLand[n]*Gs.FaktorLand)
 			tmppris = a * tmpbalance + b
-			SimPris.append(Vector2(float(n),skalerPris * tmppris))
+			SimPris.append(Vector2(float(n), tmppris))
 			$Pris.points = SimPris
 			
 			n += 1
