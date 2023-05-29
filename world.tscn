@@ -30,6 +30,9 @@ text = "Simuler"
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+
 [node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -166,8 +169,8 @@ value = 1.0
 fill_mode = 3
 show_percentage = false
 
-[node name="ProgressBar12" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
-custom_minimum_size = Vector2(6, 0)
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(7, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
@@ -175,6 +178,9 @@ max_value = 120.0
 value = 79.0
 fill_mode = 3
 show_percentage = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -187,14 +193,143 @@ size_flags_vertical = 0
 text = "Hav"
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3"]
-custom_minimum_size = Vector2(30, 0)
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3"]
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
-value = 10.0
+
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 4.0
 fill_mode = 3
 show_percentage = false
+
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 5.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 7.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 59.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 2.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+modulate = Color(0.211765, 0.403922, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 79.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer"]
+layout_mode = 2
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -207,14 +342,143 @@ size_flags_vertical = 0
 text = "Land"
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4"]
-custom_minimum_size = Vector2(30, 0)
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4"]
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
-value = 10.0
+
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 4.0
 fill_mode = 3
 show_percentage = false
+
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 5.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 7.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 59.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 2.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+modulate = Color(0.517647, 1, 0.419608, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 79.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer4/HBoxContainer"]
+layout_mode = 2
 
 [node name="VBoxContainer5" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -227,14 +491,143 @@ size_flags_vertical = 0
 text = "Atom"
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5"]
-custom_minimum_size = Vector2(30, 0)
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5"]
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
-value = 10.0
+
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 4.0
 fill_mode = 3
 show_percentage = false
+
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 5.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 7.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 59.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 2.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+modulate = Color(0.470588, 1, 1, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 79.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer5/HBoxContainer"]
+layout_mode = 2
 
 [node name="VBoxContainer7" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -247,14 +640,143 @@ size_flags_vertical = 0
 text = "Fornybare"
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7"]
-custom_minimum_size = Vector2(30, 0)
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7"]
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
-value = 10.0
+
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 4.0
 fill_mode = 3
 show_percentage = false
+
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 5.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 7.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 59.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 2.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+modulate = Color(1, 0.505882, 0.92549, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 79.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Panel" type="Panel" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer7/HBoxContainer"]
+layout_mode = 2
 
 [node name="VBoxContainer6" type="VBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -267,12 +789,138 @@ size_flags_vertical = 0
 text = "Forbrug"
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6"]
-custom_minimum_size = Vector2(30, 0)
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6"]
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 3
-value = 10.0
+
+[node name="TWhBar" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 4.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar2" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 5.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar3" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 7.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar4" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar5" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar6" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 59.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar7" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar8" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 34.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar9" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 23.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar10" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 2.0
+fill_mode = 3
+show_percentage = false
+
+[node name="TWhBar11" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+modulate = Color(1, 0.439216, 0.45098, 1)
+custom_minimum_size = Vector2(6, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 1.0
+fill_mode = 3
+show_percentage = false
+
+[node name="SalgsVaerdi" type="ProgressBar" parent="CanvasLayer/HBoxContainer/HBoxContainer/VBoxContainer6/HBoxContainer"]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+max_value = 120.0
+value = 79.0
 fill_mode = 3
 show_percentage = false
 
